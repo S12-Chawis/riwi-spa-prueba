@@ -32,11 +32,9 @@ npm run dev
 1. **Clone or download the proyect**
 
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/S12-Chawis/riwi-spa-prueba.git
 
-   cd vanilla-spa-auth
-
-
+   cd riwi-spa-prueba
    ```
 
 
