@@ -14,11 +14,6 @@ A system of authentication and user manage of events build with **JavaScript Van
 
 - **Arquitectura:** SPA con routing manual
 
-## 📦 How to run the code
-
-npm install --save-dev vite
-
-npm run dev
 
 ### Pre-requirements
 
@@ -34,290 +29,77 @@ npm run dev
    ```bash
    git clone https://github.com/S12-Chawis/riwi-spa-prueba.git
 
-   cd riwi-spa-prueba
+   cd riwi-spa-prueba-master
    ```
 
+2. **Install dependencies**
 
+npm install --save-dev vite
 
+npm run dev
 
 
-2. **Instalar dependencias**
+1. **Initial access:** Automatically redirects to login login
 
 
-   ```bash
+2. **login:** Use credentials or register a new one
 
 
-   npm install
 
+**For admins:**
 
-   # o
 
+- See complete user list
 
-   pnpm install
 
+- Edit user info
 
-   ```
 
+- Delete users
 
 
+- Change user roles
 
 
-3. **Ejecutar en modo desarrollo**
 
+**For normal users:**
 
-   ```bash
 
+- See users list
 
-   npm run dev
 
-
-   # o
-
-
-   pnpm dev
-
-
-   ```
-
-
-
-
-
-4. **Abrir en el navegador**
-
-
-   - La aplicación se abrirá automáticamente en `http://localhost:3000`
-
-
-
-
-
-### Build para producción
-
-
-
-
-
-```bash
-
-
-npm run build
-
-
-npm run preview
-
-
-```
-
-
-
-
-
-## 🎯 Uso
-
-
-
-
-
-### 👤 **Usuarios de Prueba**
-
-
-
-
-
-La aplicación viene con usuarios predefinidos para testing:
-
-
-
-
-
-| Usuario | Contraseña | Rol | Permisos |
-
-
-|---------|------------|-----|----------|
-
-
-| `admin` | `admin123` | Admin | Gestión completa de usuarios y eventos |
-
-
-| `usuario1` | `user123` | Usuario | Ver usuarios, gestionar su participación en eventos |
-
-
-
-
-
-### 🔑 **Flujo de Autenticación**
-
-
-
-
-
-1. **Acceso inicial:** La aplicación redirige automáticamente al login
-
-
-2. **Inicio de sesión:** Usar credenciales de prueba o registrar nuevo usuario
-
-
-3. **Navegación:** Una vez autenticado, acceso a Dashboard y Eventos
-
-
-4. **Cierre de sesión:** Botón disponible en la barra de navegación
-
-
-
-
-
-### 📊 **Dashboard de Usuarios**
-
-
-
+- See basic information
 
 
 **Para Administradores:**
 
 
-- Ver lista completa de usuarios
+- ➕ **Create events:** name, description, capacity
 
 
-- Editar información de usuarios
+- ✏️ **Edit events:** Modify existent information
 
 
-- Eliminar usuarios
+- 🗑️ **Delete events:** Rename system events
 
 
-- Cambiar roles de usuario
 
+**For normal users:**
 
 
+- 👀 **See events:** Complete list information
 
 
-**Para Usuarios Normales:**
+- ➕ **join:** Register in events
 
 
-- Ver lista de usuarios (solo lectura)
+- ➖ **Leave:** Cancel events
 
 
-- Ver información básica de perfiles
+- 📊 **State:** See availability 
 
+## Author
 
-
-
-
-### 🎪 **Gestión de Eventos**
-
-
-
-
-
-**Para Administradores:**
-
-
-- ➕ **Crear eventos:** Nombre, descripción, capacidad
-
-
-- ✏️ **Editar eventos:** Modificar información existente
-
-
-- 🗑️ **Eliminar eventos:** Remover eventos del sistema
-
-
-- 👥 **Participar:** Unirse/salirse como cualquier usuario
-
-
-
-
-
-**Para Usuarios Normales:**
-
-
-- 👀 **Ver eventos:** Lista completa con información detallada
-
-
-- ➕ **Unirse:** Registrarse en eventos con cupos disponibles
-
-
-- ➖ **Salirse:** Cancelar participación en eventos
-
-
-- 📊 **Estado:** Ver cupos disponibles y estado de participación
-
-
-
-
-
-### 🎛 **Características de Eventos**
-
-
-
-
-
-- **Control de Capacidad:** Los eventos tienen límite de participantes
-
-
-- **Contador Automático:** Se actualiza en tiempo real
-
-
-- **Validaciones:** No permite unirse a eventos llenos
-
-
-- **Estado Visual:** Badges que indican disponibilidad
-
-
-- **Confirmaciones:** Diálogos de confirmación para acciones importantes
-
-
-
-
-
-## 📁 Estructura del Proyecto
-
-
-
-
-
-```
-
-
-vanilla-spa-auth/
-
-
-├── 📄 package.json              # Dependencias y scripts
-
-
-├── ⚙️ vite.config.js           # Configuración de Vite
-
-
-├── 🌐 index.html               # Punto de entrada HTML
-
-
-├── 📊 db.json                  # Base de datos simulada
-
-
-└── src/
-
-
-    ├── 🚀 main.js              # Punto de entrada de la aplicación
-
-
-    ├── 🛣️ router.js            # Sistema de routing SPA
-
-
-    ├── 📁 services/
-
-
-    │   ├── 🔐 auth.js          # Servicio de autenticación
-
-
-    │   ├── 💾 database.js      # Servicio de base de datos simulada
-
-
-    │   └── 🎉 events.js        # Servicio de gestión de eventos
-
-
-    ├── 📁 components/
-
-
-    │   ├── 🔑 LoginPage.js     # Página de inicio de sesión
-
-
-    │   ├── 📝 RegisterPage.js  # Página de registro
+**Santiago Villa Panesso**
+**1013338711**
+**Lovelace**
