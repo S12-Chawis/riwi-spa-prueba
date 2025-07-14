@@ -14,42 +14,25 @@ A system of authentication and user manage of events build with **JavaScript Van
 
 - **Arquitectura:** SPA con routing manual
 
+## 📦 How to run the code
 
+npm install --save-dev vite
 
+npm run dev
 
-
-## 📦 Instalación
-
-
-
-
-
-### Prerrequisitos
-
+### Pre-requirements
 
 - Node.js (versión 16 o superior)
 
-
 - npm o pnpm
-
-
-
-
 
 ### Pasos de instalación
 
 
-
-
-
-1. **Clonar o descargar el proyecto**
-
+1. **Clone or download the proyect**
 
    ```bash
-
-
    git clone <url-del-repositorio>
-
 
    cd vanilla-spa-auth
 
