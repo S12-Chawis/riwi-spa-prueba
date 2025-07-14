@@ -1,4 +1,4 @@
-# Sistema de Autenticación SPA con Gestión de Eventos
+# SPA
 
 A system of authentication and user manage of events build with **JavaScript Vanilla**, **Vite** and **SPA architecture (Single Page Application)**.
 
