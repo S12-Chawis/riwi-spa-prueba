@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "username": "usuario1",
+      "email": "user1@example.com",
+      "password": "user123",
+      "role": "user",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Conferencia de Tecnología 2024",
+      "description": "Una conferencia sobre las últimas tendencias en tecnología y desarrollo de software.",
+      "capacity": 100,
+      "currentAttendees": 25,
+      "attendees": [2],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Workshop de JavaScript",
+      "description": "Taller práctico sobre JavaScript moderno y frameworks populares.",
+      "capacity": 30,
+      "currentAttendees": 15,
+      "attendees": [],
+      "createdBy": 1,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}

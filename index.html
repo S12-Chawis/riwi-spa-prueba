@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA Auth System</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div id="app">
+        <!-- Navbar - se muestra solo cuando el usuario está logueado -->
+        <nav id="navbar" class="navbar hidden">
+            <div class="nav-container">
+                <h1>Sistema de Usuarios</h1>
+                <div class="nav-menu">
+                  <a href="/dashboard" data-link class="nav-link">Usuarios</a>
+                  <a href="/events" data-link class="nav-link">Eventos</a>
+                </div>
+                <div class="nav-links">
+                    <span id="user-info"></span>
+                    <button id="logout-btn" class="btn btn-secondary">Cerrar Sesión</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenedor donde se renderizan las diferentes páginas -->
+        <main id="main-content">
+            <!-- El contenido se carga dinámicamente aquí -->
+        </main>
+    </div>
+
+    <!-- Script principal -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
